@@ -7,6 +7,7 @@ const getRate = (num: number): number => {
 };
 
 const setRate = (num: number, currency: string): string => {
+  console.log("From remote utils file");
   return `${currency} ${num} is the new rate`;
 };
 

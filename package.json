@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "bun build --minify src/index.ts --outdir dist",
-    "dev": "bun --hot run 'stall.config.ts' --inspect"
+    "dev": "bun run 'stall.config.ts'`"
   },
   "devDependencies": {
     "@types/bun": "latest"

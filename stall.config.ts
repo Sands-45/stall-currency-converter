@@ -28,17 +28,17 @@ const rebuild = async () => {
 
 await rebuild();
 
-// 🔁 Watch files using chokidar
+// Watching changes
 chokidar.watch("src", { ignoreInitial: true }).on("all", async () => {
   await rebuild();
 });
 
-// 🧪 Dev server
+// Dev server
 console.log(`🚀 Serving: http://localhost:${PORT}/${DIST}/${FILENAME}`);
 
 Bun.serve({
   port: PORT,
-  fetch(req) {
+  fetch(req,) {
     const url = new URL(req.url);
     if (url.pathname === `/${DIST}/${FILENAME}`) {
       return new Response(Bun.file(OUTPUT), {
