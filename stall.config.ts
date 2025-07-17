@@ -1,7 +1,7 @@
 import { build } from "bun";
 import chokidar from "chokidar";
 
-const PORT = 5151;
+const PORT = 5155;
 const DIST = "dist";
 const ENTRY = "./src/index.ts";
 const FILENAME = "index.js";
