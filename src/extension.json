@@ -1,0 +1,13 @@
+{
+  "$schema": "https://extensions.stallpos.com/schema/v1/schema.json",
+  "id": "currency-converter",
+  "name": "Currency converter",
+  "description": "Test Currency converter developed by Stall",
+  "keywords": ["rates", "exchange","currency"],
+  "icon": "assests/icon.svg",
+  "version": "0.0.1",
+  "authors": ["Sands"],
+  "repo": "https://github.com/Sands-45/stall-currency-converter",
+  "homepage": "https://github.com/Sands-45/stall-currency-converter",
+  "offline_ready": true
+}
