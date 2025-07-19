@@ -3,7 +3,7 @@
   "id": "currency-converter",
   "name": "Currency converter",
   "description": "Test Currency converter developed by Stall",
-  "keywords": ["rates", "exchange","currency"],
+  "keywords": ["rates", "exchange","currency","money"],
   "icon": "assests/icon.png",
   "version": "0.0.1",
   "authors": ["Sands"],
