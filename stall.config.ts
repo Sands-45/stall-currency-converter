@@ -3,14 +3,14 @@ import chokidar from "chokidar";
 
 const PORT = 5155;
 const DIST = "dist";
-const ENTRY = "./src/index.ts";
+const ENTRY = ["./src/index.ts"];
 const FILENAME = "index.js";
 const OUTPUT = `${DIST}/${FILENAME}`;
 
 const rebuild = async () => {
   try {
     await build({
-      entrypoints: [ENTRY],
+      entrypoints: ENTRY,
       outdir: DIST,
       target: "browser",
       sourcemap: "none",
