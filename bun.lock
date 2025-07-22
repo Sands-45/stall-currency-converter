@@ -4,10 +4,10 @@
     "": {
       "name": "stall-currency-converter",
       "dependencies": {
+        "@stallpos/extension-types": "^0.0.3",
         "chokidar": "^4.0.3",
       },
       "devDependencies": {
-        "@stallpos/extension-types": "^0.0.2",
         "@types/bun": "latest",
       },
       "peerDependencies": {
@@ -16,7 +16,7 @@
     },
   },
   "packages": {
-    "@stallpos/extension-types": ["@stallpos/extension-types@0.0.2", "", {}, "sha512-Uxs0gCmLbwIfn+u+YXtJAeLjTlqxu78mPectaFsRONCtRCNDa4fnSzEAQUcTzhTvU/5WV8stDEIxlbm70skxmA=="],
+    "@stallpos/extension-types": ["@stallpos/extension-types@0.0.3", "", {}, "sha512-6BnQBVWSpLAZCZdQ/f5dda/4RZ2cR3dPzKlEuEl6mQibiewOmFOYJ5knnLmY5kOP3f+P9E92mZF7oRB9SkO+Jg=="],
 
     "@types/bun": ["@types/bun@1.2.18", "", { "dependencies": { "bun-types": "1.2.18" } }, "sha512-Xf6RaWVheyemaThV0kUfaAUvCNokFr+bH8Jxp+tTZfx7dAPA8z9ePnP9S9+Vspzuxxx9JRAXhnyccRj3GyCMdQ=="],
 

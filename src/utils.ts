@@ -22,6 +22,7 @@ const getWorldRates = async (): Promise<any> => {
     }
 
     const data = await res.json();
+    console.log(data);
     return data;
   } catch (error: unknown) {
     const message =
@@ -29,4 +30,4 @@ const getWorldRates = async (): Promise<any> => {
   }
 };
 
-export { getRate, setRate ,getWorldRates};
+export { getRate, setRate, getWorldRates };

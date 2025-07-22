@@ -1,7 +1,7 @@
 {
   "name": "currency-converter",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "unpkg": "dist/index.js",
@@ -13,13 +13,13 @@
     "dev": "bun run 'stall.config.ts'"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "@stallpos/extension-types": "^0.0.2"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@stallpos/extension-types": "^0.0.3",
     "chokidar": "^4.0.3"
   }
 }
