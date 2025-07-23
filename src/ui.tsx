@@ -1,4 +1,4 @@
-import { getWorldRates } from "./utils";
+import React from "react";
 
 const TestButton = () => {
   const getWorldRates = async (): Promise<any> => {
@@ -19,7 +19,7 @@ const TestButton = () => {
         error instanceof Error ? error.message : "We ran into an erro";
     }
   };
-  
+
   // JSX Code
   return (
     <button
