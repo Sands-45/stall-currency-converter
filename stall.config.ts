@@ -3,7 +3,7 @@ import chokidar from "chokidar";
 
 const PORT = 5155;
 const DIST = "dist";
-const ENTRY = ["./src/index.tsx"];
+const ENTRY = ["./src/index.ts"];
 const FILENAME = "index.js";
 const OUTPUT = `${DIST}/${FILENAME}`;
 
