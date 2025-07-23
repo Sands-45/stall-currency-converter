@@ -32,7 +32,7 @@ const app: StallExtension = {
       actions: [
         {
           native: true,
-          name: ExtensionNativeActions.OPEN_PAGE,
+          name:  "open_page",
           label: "View rate",
           static_args: {
             page_id: "rate_summary",
