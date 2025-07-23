@@ -1,7 +1,7 @@
-import TestButton from "./components/test-button";
+import Rate from "./components/rate";
 
 const components = {
-  test_button: TestButton,
+  rate_summary: Rate,
 };
 
 export { components };

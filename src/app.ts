@@ -1,7 +1,14 @@
-import type { StallExtension } from "@stallpos/extension-types";
+import {
+  ExtensionNativeActions,
+  type StallExtension,
+} from "@stallpos/extension-types";
+
+const endpoint =
+  "https://raw.githubusercontent.com/Sands-45/stall-currency-converter/refs/heads/main/src/mock.json";
 
 const app: StallExtension = {
-  pages: [{
+  pages: [
+    {
       index: true,
       id: "all-rates",
       title: "All Rates",
@@ -13,23 +20,55 @@ const app: StallExtension = {
       ui: {
         type: "list",
         data_origin: "remote",
-        filters:[],
-        source: "https://raw.githubusercontent.com/Sands-45/stall-currency-converter/refs/heads/main/src/mock.json",
+        filters: [],
+        source: endpoint,
         keys: {
-          id: "id",
+          id: "currency",
           image: "",
           right: { key: "rate", format: "price" },
           left: { key: "currency", format: "none" },
         },
       },
-      actions: [{
-    native: true,
-    name: "",
-    label: "Get other rates",
-    static_args: {},
-    close_on_complete: false,
-  },],
-    },],
+      actions: [
+        {
+          native: true,
+          name: ExtensionNativeActions.OPEN_PAGE,
+          label: "View rate",
+          static_args: {
+            page_id: "rate_summary",
+            page_title: "Rate Summary",
+          },
+          close_on_complete: false,
+        },
+      ],
+    },
+    {
+      index: true,
+      id: "rate_summary",
+      title: "Rate Summary",
+      description: "View rate summary",
+      contexts: {
+        lookup: true,
+        standalone: false,
+      },
+      ui: {
+        type: "custom",
+        name: "rate_summary",
+      },
+      actions: [
+        {
+          native: true,
+          name: "",
+          label: "View rate",
+          static_args: {
+            page_id: "rate_summary",
+            page_title: "Rate Summary",
+          },
+          close_on_complete: false,
+        },
+      ],
+    },
+  ],
 };
 
 export default app;

@@ -11,11 +11,12 @@ const setRate = (num: number, currency: string): string => {
   return `${currency} ${num} is the new rate`;
 };
 
+const endpoint =
+  "https://raw.githubusercontent.com/Sands-45/stall-currency-converter/refs/heads/main/src/mock.json";
+
 const getWorldRates = async (): Promise<any> => {
   try {
-    const res = await fetch(
-      "https://query1.finance.yahoo.com/v8/finance/chart/GME?interval=1d&range=1y"
-    );
+    const res = await fetch(endpoint);
 
     if (!res.ok) {
       return [];
