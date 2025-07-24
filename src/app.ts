@@ -32,9 +32,8 @@ const app: StallExtension = {
             className: "uppercase",
           },
           right: {
-            value: "{{currency}} {{rate}}",
-            format: "number",
-            className: "capitalize",
+            value: "{{symbol}} {{rate}}",
+            format: "none",
           },
         },
       },
