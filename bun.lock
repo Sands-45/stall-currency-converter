@@ -7,7 +7,7 @@
         "chokidar": "^4.0.3",
       },
       "devDependencies": {
-        "@stallpos/extension-types": "0.0.6",
+        "@stallpos/extension-types": "^0.0.7",
         "@types/bun": "latest",
         "@types/react": "^19.1.8",
         "@types/react-dom": "^19.1.6",
@@ -18,7 +18,7 @@
     },
   },
   "packages": {
-    "@stallpos/extension-types": ["@stallpos/extension-types@0.0.6", "", {}, "sha512-qYVVCgDwijd2G1mF/0TASS/gYo2d7zKqCByc8pXQ9ltA2zSpUaSjSSpqvYlPrKiMlHDopivVyxXjLf/1qe6vMQ=="],
+    "@stallpos/extension-types": ["@stallpos/extension-types@0.0.7", "", {}, "sha512-ILjnr4nbWG//KkcuCihoK4Ft//9LTbPP1piG8Cp9M7NGDBU68KZ8TC3KthrI0MVGBMudHi40OBJSEmth6isbRw=="],
 
     "@types/bun": ["@types/bun@1.2.18", "", { "dependencies": { "bun-types": "1.2.18" } }, "sha512-Xf6RaWVheyemaThV0kUfaAUvCNokFr+bH8Jxp+tTZfx7dAPA8z9ePnP9S9+Vspzuxxx9JRAXhnyccRj3GyCMdQ=="],
 

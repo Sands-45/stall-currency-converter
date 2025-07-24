@@ -1,7 +1,4 @@
-import {
-  ExtensionNativeActions,
-  type StallExtension,
-} from "@stallpos/extension-types";
+import { type StallExtension } from "@stallpos/extension-types";
 
 const endpoint =
   "https://raw.githubusercontent.com/Sands-45/stall-currency-converter/refs/heads/main/src/mock.json";
@@ -32,7 +29,7 @@ const app: StallExtension = {
       actions: [
         {
           native: true,
-          name:  "open_page",
+          name: "open_page",
           label: "View rate",
           static_args: {
             page_id: "rate_summary",
