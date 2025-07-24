@@ -5,7 +5,7 @@
   "description": "Test Currency converter developed by Stall",
   "keywords": ["rates", "exchange","currency"],
   "icon": "assests/icon.png",
-  "version": "0.3.0",
+  "version": "0.1.1",
   "authors": ["Sands"],
   "repo": "https://github.com/Sands-45/stall-currency-converter",
   "homepage": "https://github.com/Sands-45/stall-currency-converter",
