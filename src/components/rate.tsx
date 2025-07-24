@@ -1,10 +1,12 @@
-type Props = {
-  item: { currency: string; rate: number };
-  search_query: string;
+
+import type { CustomUIProps } from "@stallpos/extension-types";
+
+type Props = CustomUIProps & {
+  item: { currency: string; rate: number; symbol: string };
 };
 
 const Rate = ({ item, search_query }: Props) => {
-  const multiple = Number(search_query||1) ?? 1;
+  const multiple = Number(search_query || 1) ?? 1;
   const base = (1 * multiple).toFixed(2);
   const rate = (item.rate * multiple).toFixed(2);
   // JSX Code

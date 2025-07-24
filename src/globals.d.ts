@@ -21,6 +21,10 @@ declare global {
     interface IntrinsicClassAttributes<T>
       extends React.JSX.IntrinsicClassAttributes<T> {}
   }
+
+  interface Window {
+    React: typeof import("react");
+  }
 }
 
 export {};

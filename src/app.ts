@@ -18,12 +18,24 @@ const app: StallExtension = {
         type: "list",
         data_origin: "remote",
         filters: [],
+        sorting: {
+          key: "currency",
+          order: "asc",
+        },
         source: endpoint,
         keys: {
           id: "currency",
           image: "",
-          right: { key: "rate", format: "price" },
-          left: { key: "currency", format: "none" },
+          title: {
+            value: "{{currency}}",
+            format: "none",
+            className: "uppercase",
+          },
+          right: {
+            value: "{{currency}} {{rate}}",
+            format: "number",
+            className: "capitalize",
+          },
         },
       },
       actions: [
